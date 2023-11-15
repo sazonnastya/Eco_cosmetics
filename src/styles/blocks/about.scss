@@ -1,0 +1,139 @@
+.about {
+    position: relative;
+    padding-top: 0;
+
+    @include onTablet {
+      padding-top: 0;
+    }
+
+    @include onDesktop {
+      padding-top: 200px;
+    }
+
+  &__wrapp {
+    @include pageGrid;
+  }
+
+  &__title {
+    grid-column: 1/-1;
+
+    @include onTablet {
+        grid-column: 1/4;
+      }
+  
+      @include onDesktop {
+        grid-column: 2/6;
+      }
+  }
+
+  &__paragraf {
+    font-family: $main-text-font-family;
+    color: $main-text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    grid-column: 1/-1;
+
+    @include onTablet {
+      grid-column: 1/4;
+    }
+
+    @include onDesktop {
+      grid-column: 2/6;
+    }
+
+
+    &--desktop {
+    font-family: $main-text-font-family;
+    color: $main-text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    display: none;
+
+    @include onDesktop {
+      display: block;
+      grid-column: 2/6;
+    }
+
+    }
+  }
+
+  &__link {
+    color: $second-text-color;
+    font-family: $main-text-font-family;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%; 
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(52, 79, 16, 0.5);
+    cursor: pointer;
+    display: block;
+    max-width: max-content;
+    // transition: all .3s;
+    margin-top: 40px;
+    grid-column: 1/-1;
+
+    @include onTablet {
+      grid-column: 1/-1;
+    }
+
+    @include onDesktop {
+      grid-column: 2/4;
+    }
+  }
+
+  &__images {
+    position: absolute;
+    right: 50px;
+
+
+    @include onDesktop {
+        grid-column: 8/-1;
+      }
+  }
+
+  &__img--1 {
+    display: none;
+
+    @include onTablet {
+        display: none;
+    }
+
+    @include onDesktop {
+       grid-column: 7/10;
+       display: inline-block;
+       margin-right: 20px;
+    }
+  }
+
+  &__img--2 {
+    display: none;
+
+    @include onTablet {
+      display: none;
+    }
+
+    @include onDesktop {
+        grid-column: 10/12;
+        display: inline-block;
+    }
+  }
+
+  &__img--3 {
+    display: none;
+    
+    @include onTablet {
+      display: block;
+      grid-column: 3/6;
+    }
+
+    @include onDesktop {
+        display: none;
+    }
+
+
+  }
+ }

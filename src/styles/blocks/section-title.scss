@@ -1,0 +1,20 @@
+.section-title {
+  margin: 0;
+  font-size: 24px;
+  font-family: $main-text-font-family;
+  text-transform: uppercase;
+  color: #344F10;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 1.2px;
+
+  @include onTablet {
+    font-size: 24px;
+  }
+
+  @include onDesktop {
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 1.8px;
+  }
+}

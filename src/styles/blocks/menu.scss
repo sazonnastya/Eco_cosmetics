@@ -1,0 +1,71 @@
+.menu {
+  position: fixed;
+  height: 100vh;
+  background-color: $main-text-color;
+  // z-index: 2;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+
+  @include onDesktop {
+    position: initial;
+    background-color: #E4DFD3;
+    width: 300px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 0;
+    list-style: none;
+    gap: 50px;
+
+  &-item {
+    display: block;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  
+    transition: all 0.3s;
+  
+    &:hover {
+      width: 30%;
+      scale: 115%;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: #E4DFD3;
+  }
+  }
+}
+.page__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateX(-100%);
+
+  @include onDesktop {
+    transform: translateX(0);
+  }
+
+  &:target {
+    overflow: hidden;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+  }
+}
+
