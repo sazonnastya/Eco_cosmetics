@@ -71,4 +71,23 @@
       display: flex;
     }
   }
+
+  &-ingredients {
+    display: flex;
+    position: absolute;
+    top: 28px;
+    left: 70px;
+    gap: 60px;
+    align-items: center;
+    transform: rotate(-90deg);
+    display: none;
+
+    @include onTablet {
+      display: none;
+    }
+
+    @include onDesktop {
+      display: flex;
+    }
+  }
 }

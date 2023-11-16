@@ -6,7 +6,7 @@
   &__logo {
     display: flex;
     align-items: center;
-    align-self: start;
+    // align-self: start;
     gap: 12px;
 
     &-img {
@@ -40,11 +40,11 @@
     letter-spacing: 0.7px;
 
     @include onTablet {
-        display: none;
+      display: none;
     }
 
     @include onDesktop {
-        display: flex;
+      display: flex;
     }
   }
 
@@ -56,8 +56,8 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    // @include onDesktop {
-    //   display: none;
-    // }
+    @include onDesktop {
+      display: none;
+    }
   }
 }

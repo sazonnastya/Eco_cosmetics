@@ -11,7 +11,7 @@
 
   @include onDesktop {
     position: initial;
-    background-color: #E4DFD3;
+    background-color: $beige-color;
     width: 300px;
   }
 
@@ -44,9 +44,24 @@
     font-size: 18px;
     line-height: 130%;
     text-align: center;
-    color: #E4DFD3;
+    color: $beige-color;
   }
-  }
+ }
+
+  &__close-btn{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(./../images/close-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    transition: all 0.3s;
+ 
+    &:hover {
+      scale: 110%;
+    }
+} 
 }
 .page__menu {
   position: fixed;

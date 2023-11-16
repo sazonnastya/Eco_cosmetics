@@ -18,7 +18,7 @@
       list-style-type: none;
       text-decoration: none;
       gap: 10px;
-      color: #E4DFD3;
+      color: $beige-color;
       padding: 0;
       grid-row: 1;
 
@@ -39,7 +39,7 @@
       font-size: 18px;
       line-height: 150%;
       text-transform: capitalize;
-      color: #E4DFD3;
+      color: $beige-color;
       text-decoration: none;
   
       @include onTablet {
@@ -56,13 +56,12 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 150%;
-      color: #E4DFD3;
+      color: $beige-color;
       position: absolute;
       bottom: 0;
       padding-bottom: 30px;
       left: 50%;
       transform: translate(-50%);
-      text-align: center;
       grid-column: 1/-1;
     
       @include onTablet {
@@ -76,7 +75,7 @@
     
       @include onDesktop {
         position: relative;
-        margin-top: 145px;
+        // margin-top: 145px;
         text-align-last: left;
         grid-column: 1/5;
         grid-row: 3;
@@ -103,7 +102,7 @@
 
     &__info-link {
       display: block;
-      color: #E4DFD3;
+      color: $beige-color;
       font-size: 14px;
       font-weight: 400;
       line-height: 150%;
@@ -115,12 +114,12 @@
         display: block;
         text-decoration: none;
         margin-bottom: 20px;
-        color: #E4DFD3;
+        color: $beige-color;
         transition: all 0.2s;
 
 
         &:hover {
-          border-bottom: 1.5px solid #E4DFD3;
+          border-bottom: 1.5px solid $beige-color;
           transform: translateY(-1px);
         }
       }
@@ -137,7 +136,7 @@
     &__icons {
       display: flex;
       justify-content: space-between;
-      color: #E4DFD3;
+      color: $beige-color;
       width: 54px;
       margin: 20px 0 40px;
       grid-column: 1;
@@ -150,6 +149,7 @@
       }
 
       @include onDesktop {
+        margin: 0;
         grid-column: 8;
         grid-row: 3;
       }

@@ -165,7 +165,7 @@
 
   &__button {
     display: block;
-    color: #F2F2F2;
+    color: $color;
     border: none;
     font-family: $main-text-font-family;
     font-size: 16px;
@@ -188,13 +188,13 @@
 
     &:hover {
       scale: 105%;
-      background-color: #E4DFD3;
+      background-color: $beige-color;
       color: $main-text-color;
     }
     
     &:active {
-      background-color: #444;
-      color: #F2F2F2;
+      background-color: $background-color-button;
+      color: $color;
       scale: 98%;
     }
   }

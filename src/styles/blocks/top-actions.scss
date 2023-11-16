@@ -1,34 +1,33 @@
 .top-actions {
-    padding: 15px 0;
+  padding: 15px 0;
   
-    @include onTablet {
-      padding: 20px 0;
-    }
+  @include onTablet {
+    padding: 20px 0;
+  }
   
-    @include onDesktop {
-      padding: 40px 0;
-    }
+  @include onDesktop {
+    padding: 40px 0;
+  }
 
-    &__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-      &__close {
-        display: block;
-        width: 25px;
-        height: 25px;
-        background-image: url(./../images/close-icon.png);
-        background-position: center;
-        background-repeat: no-repeat;
+  // &__close-btn {
+  //   display: block;
+  //   width: 25px;
+  //   height: 25px;
+  //   background-image: url(./../images/close-icon.png);
+  //   background-position: center;
+  //   background-repeat: no-repeat;
     
-        transition: all 0.3s;
+  //   transition: all 0.3s;
     
-        &:hover {
-          scale: 110%;
-        }
-      }
-    
+  //   &:hover {
+  //     scale: 110%;
+  //   }
+  // } 
 }
