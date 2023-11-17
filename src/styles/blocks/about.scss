@@ -72,7 +72,7 @@
     cursor: pointer;
     display: block;
     max-width: max-content;
-    // transition: all .3s;
+    transition: all .3s;
     margin-top: 40px;
     grid-column: 1/-1;
 
@@ -82,6 +82,10 @@
 
     @include onDesktop {
       grid-column: 2/4;
+    }
+
+    &:hover {
+      border-bottom: 1.5px solid $dark-green;
     }
   }
 
